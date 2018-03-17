@@ -66,18 +66,16 @@ parameter of interest in each path graph changes by more than tol in BCD.}
 Returns a sequence of estimates of the solution to the proximal
 operator of the latent group Lasso. The returned solutions are exact ones if
 the DAG is a directed path graph.
-\describe{
-\item{\code{lamlist}: }{Grid of lam values used.}
-\item{\code{beta.m}: }{A \code{nlam}-by-\code{p} matrix where
+\item{lamlist}{Grid of lam values used.}
+\item{beta.m}{A \code{nlam}-by-\code{p} matrix where
 \code{beta.m[i, ]} gives the \code{i}th solution to the proximal
 operator, corresponding to the \code{i}th lam value in the grid.}
-\item{\code{penalval.m}: }{Length-\code{nlam} vector of values of the penalty
+\item{penalval.m}{Length-\code{nlam} vector of values of the penalty
 \eqn{lam * \Omega(\beta; w)} where \code{penalval.m[i, ]} correponds to
 the \code{i}th lam value in the grid, if \code{get.penalval} is \code{TRUE}.
 If \code{get.penalval} is \code{FALSE}, \code{NA} is returned.}
-\item{\code{assign}: }{Value of \code{assign}.}
-\item{\code{w.assign}: }{Value of \code{w.assign}.}
-}
+\item{assign}{Value of \code{assign}.}
+\item{w.assign}{Value of \code{w.assign}.}
 }
 \description{
 See \code{\link{hsm}} for the problem that is solved. If \code{lamlist}

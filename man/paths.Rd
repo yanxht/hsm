@@ -27,12 +27,10 @@ Necessary condition is \code{w_l} increases with \code{|g_l|}.}
 Returns \code{assign}, a matrix of \code{p} columns that gives the
 assignments of variables over selected path graphs, and \code{w.assign}, a
 list of the same length as the number of rows in \code{assign}.
-\describe{
-\item{\code{assign}: }{Each row of \code{assign} corresponds to a path graph decomposed from DAG.}
-\item{\code{w.assign}: }{The \code{l}th element of the list contains the
+\item{assign}{Each row of \code{assign} corresponds to a path graph decomposed from DAG.}
+\item{w.assign}{The \code{l}th element of the list contains the
 weights corresponding to the \code{l}th row of \code{assign}
 (the \code{l}th path graph).}
-}
 }
 \description{
 For every root node in DAG defined by \code{map}, \code{\link{paths}} circles

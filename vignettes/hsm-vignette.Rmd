@@ -3,6 +3,7 @@ title: "Using the hsm package"
 author: "Xiaohan Yan"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
+bibliography: ref.bib
 vignette: >
   %\VignetteIndexEntry{Using the hsm package}
   %\VignetteEngine{knitr::rmarkdown}
@@ -11,8 +12,7 @@ vignette: >
 
 The `hsm` package implements an algorithm utilizing BCD blocked by path 
 graphs for solving proximal operator of latent group Lasso in 
-hierarchical sparse modeling, that is described in [Yan & Bien (2015) 
-``Hierarchical Sparse Modeling: A Choice of Two Regularizers''](https://arxiv.org/pdf/1512.01631v1.pdf). This document 
+hierarchical sparse modeling, that is described in @yan2017. This document 
 introduces how to use this package.
 
 ## Knowing what problem is solved here
@@ -173,4 +173,6 @@ round(result.path$beta.m, digits = 4)
 By adjusting `flmin` (which is the ratio between the largest and smallest 
 $\lambda$ values in the grid) and `nlam` (which is the number of grid points used), 
 you can get your desired sparsity level in the solutions.
+
+## References
 
