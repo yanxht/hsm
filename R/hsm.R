@@ -1,12 +1,11 @@
 #' Solves proximal operator of latent group lasso in Hierarchical Sparse
 #' Modeling.
 #'
-#' Solves proximal operator of the latent group Lasso appearing in Yan &
-#' Bien (2017)
+#' Solves proximal operator of the latent group Lasso appearing in Yan & Bien (2017)
 #' \deqn{min_\beta || y - \beta ||_2^2 + lam * \Omega(\beta; w)}
 #' where \eqn{\Omega(\beta; w) = min_{sum_l v^(l) = \beta; supp(v^(l))
 #' \subset g_l} w_l * || v^(l) ||_2} is known as the latent group lasso penalty
-#'  as defined in \href{http://www.machinelearning.org/archive/icml2009/papers/471.pdf}{Jacob et al. (2009)}. In the problem, \eqn{\beta} is a length-\eqn{p}
+#'  as defined in Jacob et al. (2009). In the problem, \eqn{\beta} is a length-\eqn{p}
 #'  parameter vector and its elements are embedded in a directed acyclic graph
 #'  (DAG). The desired sparsity pattern is a subgraph of the DAG such that if
 #'  \eqn{\beta_i} embedded in node \eqn{i} are set to zero, all the parameters
@@ -77,9 +76,12 @@
 #'
 #' @useDynLib hsm
 #'
-#' @references Yan, Xiaohan; Bien, Jacob. Hierarchical Sparse Modeling:
-#' A Choice of Two Group Lasso Formulations. Statist. Sci. 32 (2017),
-#' no. 4, 531--560. doi:10.1214/17-STS622. https://projecteuclid.org/euclid.ss/1511838027
+#' @references Yan, X. and Bien, J. (2017). Hierarchical Sparse Modeling:
+#' A Choice of Two Group Lasso Formulations. Statist. Sci. 32,
+#' no. 4, 531--560. doi:10.1214/17-STS622.
+#' @references Jacob, L., Obozinski, G. and Vert, J. (2009). Group Lasso with Overlap and Graph Lasso.
+#' In Proceedings of the 26th Annual International Conference on Machine Learning.
+#' ICML'09 433-440. ACM, New York.
 #'
 #' @seealso \code{\link{hsm.path}}
 #' @seealso \code{\link{paths}}

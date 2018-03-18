@@ -22,9 +22,9 @@ zeroed out as well.
 Its main functions are \code{\link{hsm}}, \code{\link{hsm.path}}.
 }
 \references{
-Yan, Xiaohan; Bien, Jacob. Hierarchical Sparse Modeling:
-A Choice of Two Group Lasso Formulations. Statist. Sci. 32 (2017),
-no. 4, 531--560. doi:10.1214/17-STS622. https://projecteuclid.org/euclid.ss/1511838027
+Yan, X. and Bien, J. (2017). Hierarchical Sparse Modeling:
+A Choice of Two Group Lasso Formulations. Statist. Sci. 32,
+no. 4, 531--560. doi:10.1214/17-STS622.
 }
 \author{
 Xiaohan Yan \email{xy257@cornell.edu}, Jacob Bien
