@@ -145,7 +145,7 @@ hsm.path <- function(y, nlam = 20, flmin = 0.01,
 #'
 #' @export
 #'
-#' @useDynLib hsm
+#' @useDynLib hsm, .registration = TRUE
 #'
 #' @seealso \code{\link{hsm.path}}
 lam.max.hsm <- function(y, assign, w.assign) {

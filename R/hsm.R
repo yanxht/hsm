@@ -74,7 +74,7 @@
 #'
 #' @export
 #'
-#' @useDynLib hsm
+#' @useDynLib hsm, .registration = TRUE
 #'
 #' @references Yan, X. and Bien, J. (2017). Hierarchical Sparse Modeling:
 #' A Choice of Two Group Lasso Formulations. Statist. Sci. 32,
