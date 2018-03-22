@@ -110,7 +110,7 @@ paths <- function(map, var, w = NULL) {
   return(list("assign" = assign, "w.assign" = w.assign))
 }
 
-#' Find ancestor nodes for a node in DAG.
+#' Find ancestor nodes for a node in directed acyclic graph.
 #'
 #' Recursively finds all ancestor nodes in DAG for node with the given index.
 #'

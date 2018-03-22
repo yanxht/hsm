@@ -2,7 +2,7 @@
 % Please edit documentation in R/paths.R
 \name{ancestor.find}
 \alias{ancestor.find}
-\title{Find ancestor nodes for a node in DAG.}
+\title{Find ancestor nodes for a node in directed acyclic graph.}
 \usage{
 ancestor.find(index, map, n.nodes)
 }
